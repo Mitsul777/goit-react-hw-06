@@ -1,8 +1,14 @@
 import Contact from "./Contact.jsx";
 import { useSelector } from 'react-redux';
 import styles from './ContactList.module.css'
+
 function ContactList() {
-    const contacts = useSelector(state => state.contacts);
+    const contacts = useSelector(state => {
+        const { contacts, filters } = state;
+        const { nameFilter } = filters;
+        // Применяем фильтр к списку контактов
+        return contacts.filter(contact => contact.name.includes(nameFilter));
+    });
 
     return (
         <div>
@@ -12,4 +18,5 @@ function ContactList() {
         </div>
     );
 }
-export default ContactList
+
+export default ContactList;
