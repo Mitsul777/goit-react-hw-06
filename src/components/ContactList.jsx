@@ -6,7 +6,6 @@ function ContactList() {
     const contacts = useSelector(state => {
         const { contacts, filters } = state;
         const { nameFilter } = filters;
-        // Применяем фильтр к списку контактов
         return contacts.filter(contact => contact.name.includes(nameFilter));
     });
 
