@@ -24,3 +24,7 @@
 .contact-item button:hover {
     background-color: #c82333;
 }
+.ul {
+    list-style: none;
+    padding: 0;
+}
