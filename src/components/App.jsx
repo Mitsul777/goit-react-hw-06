@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
 import ContactList from './ContactList/ContactList.jsx';
-import store from '../redux/store.js'
+import {store} from '../redux/store.js'
 import ContactForm from './ContactForm/ContactForm.jsx'
 import './App.css'
 import SearchBox from "./SearchBox/SearchBox.jsx";
