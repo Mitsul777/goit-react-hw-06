@@ -3,9 +3,9 @@ import { nanoid } from 'nanoid'
 import * as Yup from "yup";
 import { ErrorMessage } from "formik";
 import styles from './ContactForm.module.css';
-import { addContact } from '../redux/contactsSlice.js';
+import { addContact } from '/src/redux/contactsSlice.js';
 import {useDispatch} from "react-redux";
-import {setNameFilter} from "../redux/filtersSlice.js";
+import {setNameFilter} from "/src/redux/filtersSlice.js";
 
 
 const initialValues = {
