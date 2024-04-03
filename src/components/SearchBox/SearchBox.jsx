@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {setNameFilter} from "../../redux/filtersSlice.js";
 
 
-function SearchBox ({value}) {
+const SearchBox = () => {
     const dispatch = useDispatch();
     const nameFilter = useSelector(state => state.filters.nameFilter);
 
